@@ -1,5 +1,5 @@
-Gamer1 = input("Введите имя игрока играющего х ")
-Gamer2 = input("Введите имя игрока играющего о ")
+Igrok1 = input("Введите имя игрока играющего х ")
+Igrok2 = input("Введите имя игрока играющего о ")
 matrix = [
     ['-', '-', '-'],  # 0
     ['-', '-', '-'],  # 1
@@ -30,11 +30,11 @@ def nich():
                 count += 1
     return count
 while True:
-    print('+ 0 1 2 ')
+    print('  0 1 2 ')
     print('0', *matrix[0])
     print('1', *matrix[1])
     print('2', *matrix[2])
-    print(Gamer1, 'Ваш ход')
+    print(Igrok1, 'Ваш ход')
 
 
     def fhod1v():  # начало ходов
@@ -55,16 +55,16 @@ while True:
     print('2', *matrix[2])
 
     if checkX():
-        print(Gamer1, "ПОБЕДА!!!")
+        print(Igrok1, "ПОБЕДА!!!")
         break
     if checkY():
-        print(Gamer2, "ПОБЕДА!!!")
+        print(Igrok2, "ПОБЕДА!!!")
         break
     if nich() == 0:
         print('Ничья')
         break
 
-    print(Gamer2, 'Ваш ход')
+    print(Igrok2, 'Ваш ход')
 
 
     def fhod2v():
@@ -84,14 +84,14 @@ while True:
     print('0', *matrix[0])
     print('1', *matrix[1])
     print('2', *matrix[2])
-    print(Gamer1, 'Ваш ход')
+    print(Igrok1, 'Ваш ход')
 
 
     if checkX():
-        print(Gamer1, "ПОБЕДА!!!")
+        print(Igrok1, "ПОБЕДА!!!")
         break
     if checkY():
-        print(Gamer2, "ПОБЕДА!!!")
+        print(Igrok2, "ПОБЕДА!!!")
         break
     if nich() == 0:
         print('Ничья')
