@@ -1,3 +1,1 @@
-print('Hello, SF')
-sad = 5
-print(sad)
+print("26.01.2023")
